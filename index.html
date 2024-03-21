@@ -1,129 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-   
-    <title>Aanvi Kothari</title>
+    <title>Resume - Aanvi Kothari</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: 'Roboto', sans-serif;
+        }
+      
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 10px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            color: white;
+            background-color: #800080;
+            border: 2px solid #800080;
+            padding: 8px;
+            display: inline-block;
+            margin: 4px 0;
+        }
+        .info-container, .education-container, .experience-container, .leadership-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile-pic, .profile-pic2, .profile-pic3 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-pic3 {
+            width: 150px; /* Adjusted width for specific images */
+        }
+        .sidebar a {
+            color: white;
+            background-color: #800080;
+            border: 2px solid #800080;
+            padding: 8px;
+            display: inline-block;
+            margin: 4px 0;
+            text-decoration: none;
+        }
+        @media (min-width: 768px) {
+            .section {
+                flex-basis: calc(50% - 10px);
+            }
+        }
+    </style>
 </head>
-<div class="section-wrapper" id="education">
-    <div class="education-content">
-        <div class="education-image">
-            <img src="aanvi.jpg" alt="Your Name's Image">
+<body>
+    <div class="sidebar">
+        <h1>Welcome to Aanvi Kothari's personal website!</h1>
+        <li><a href="#about me">General Information</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work experience">Work Experience</a></li>
+        <li><a href="#Leadership in Clubs">Leadership in Clubs</a></li>
+    </div>
+    <div class="main-content">
+        <div id="about me" class="section">
+            <div class="info-container">
+                <img src="aanvi-kothari-profile.jpeg" alt="Aanvi Kothari" class="profile-pic">
+                <div>
+                    <h2>General Information</h2>
+                    <p>Full Name: Aanvi Kothari</p>
+                    <p>Languages: English, Hindi, Marwari</p>
+                   <p> From: Calcutta, India</p> 
+                </div>
+            </div>
         </div>
-        <div class="education-text">
-            <h2>Aanvi Kothari</h2>
-            Welcome to Aanvi's personal portfolio!
-            <br>
-            <h3>Education:</h3>
-         Sophomore at University of California, Berkeley
-         <br>
-         Current SWE @Amazon
-         <br>
-          <b> Major</b> : Computer Science <br>
-        <b> GPA</b>: GPA: 3.88/4.0 <br>
-            <b>Courses: </b>: 
-                <li>Data Structures & Algorithms</li> 
-                <li>Principles and Techniques of Data Science </li> 
-                <li>Game Theory</li> 
-                <li>Advanced Probability</li> 
-                <li>Statistical Inference</li> 
-                <li>Web Development </li>
-            <br>
-            <b> Clubs</b>: 
-            <li>AI Entreprenurs at Berkeley</li>
-            <li>Generative AI </li>
-            <li>Codify</li>
+        <div id="education" class="section">
+            <div class="education-container">
+                <img src="berklogo.png" alt="Berkeley Logo" class="profile-pic2">
+                <div>
+                    <h2>Education</h2>
+                    <p>08/2021 - 05/2026, <b> Computer Science </b></p>
+                    <h3>University of California, Berkeley</h3>
+                    <ul>
+                      
+                      <li> <b> Relevant Coursework </b> : Data Structures and Algorithms, Designing Information Systems, Multivariable Calculus, Inferential Thinking & Computation in Data Science, Probability Theory, Linear Regression
+                        </li>
+                        <li> <b>Skills</b> : Python, Java, C#, JavaScript, HTML5, CSS, Scheme, React, Pandas, PostgreSQL, MySQL, Flask, NumPy, DoWHY, Matplotlib </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Additional sections follow the same pattern: Image followed by content in a flex container -->
+    </div>
+    <div id="work experience" class="section">
+        
+        <div class="experience-container">
             
+           
+            <div>
+                <h2>Work Experience</h2>
+                <br>
+                <br>
+               
+                <div class="experience-container" style="margin-top: 20px;">
+                    <img src="amazon.png" alt="Aamazon Logo" class="profile-pic3">
+                    <div>
+                        <h3>Software Engineering Intern at Amazon</h3>
+                        <ul>
+                            <li>upcoming swe, summer '24</li>
+                          
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="experience-container" style="margin-top: 20px;">
+                    <img src="arm.png" alt="ARM Logo" class="profile-pic3">
+                    <div>
+                        <h3>Software Engineering Intern at ARM</h3>
+                        <ul>
+                            <li>Engineered a cutting-edge PowerBI demo dashboard featuring an interface to display critical sustainability metrics, streamlining automated metric generation through advanced data pipelines, real-time analytics, AI-driven insights, and robust scalability</li>
+                            <li>Enhanced dashboard performance metrics to increase dashboard adoption rate by 5%, stakeholder satisfaction by 10% through predictive analytics and comprehensive data visualisation</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+        
+        <div class="experience-container" style="margin-top: 20px;">
+            <img src="netwoven.png" alt="Netwoven Logo" class="profile-pic3">
+            <div>
+                <h3>Software Engineering Intern at Netwoven</h3>
+                <ul>
+                    <li> 
+                        Accomplished the creation of a 3-step RAG workflow chatbot to identify different employee compensation packages in the enterprise by leveraging ChatAPI (Cohere) interface. </li>
+                        <li> Demonstrated a 26% increase in employer satisfaction scores, validating the effectiveness of embedding documents and reranking relevant documents
+    
+                    </li>   </ul>
+            </div>
         </div>
+        <div class="experience-container" style="margin-top: 20px;">
+            <img src="berklogo.png" alt="Berkeley Logo" class="profile-pic3">
+            <div>
+                <h3>Reseach Intern under Prof. Joshua Hug & Tutor for CS10, DATA100</h3>
+             
+                <ul>
+                 
+                    <li> 
+                        Led the development of a sophisticated game engine for generating explorable worlds. Designed and implemented several features for the game.
+                    </li>
+                        <li> 
+                            Spearheaded this large-scale design project, mastering the intricacies of random generation to form dynamic and immersive virtual gaming landscapes.
+                        </li> 
+                    </ul> 
+                <h3>     Tutor for CS10, DATA100</h3>
+                    <ul> 
+
+                        <li>  Facilitated biweekly discussion and lab sections for 50+ students, reinforcing core CS concepts including linked lists, recursion, and sorting algorithms. 
+                        </li>   <li>   Improved problem-solving techniques and understanding of key concepts through personalized guidance during Office Hours.
+    
+                        </li> 
+                    </ul>
+    
+            </div>
+        </div>
+        <div class="leadership-container" style="margin-top: 20px;">
+            <img src="whitehat.png" alt="WhiteHat Logo" class="profile-pic3">
+            <div>
+                <h3>Front-End Engineering Intern at WhiteHat Education Technology</h3>
+                <ul>
+                    <li>Architectured 30+ compelling games in Javascript, reflected by 83% increased app downloads and a 14% reduction in app crash rates.  </li>
+                    <li>Awarded Most Competitive Programmer for designing the remastered version of Google Dino Run. </li>
+
+                </ul>
+            </div>
+        </div>
+     
     </div>
 </div>
-        
-        <div class="section-wrapper" id = 'experience'>
-            <h2>Experience</h2>
-            <div class="experience-wrapper">
-            <!-- Question 3a. Create 2 to 3 divs with the same class (experience-list-item), and fill them in with your work experiences. -->
-            <div class="experience-list-item">
-                <h3>SWE Intern at Arm</h3>
-                <ul>
-                    <li> 
-                        Engineered a cutting-edge PowerBI demo dashboard featuring an innovative interface to display critical sustainability metrics, streamlining automated metric generation through advanced data pipelines, real-time analytics, AI-driven insights, and robust scalability
-                    </li>
-                    <li> 
-                        Enhanced dashboard performance metrics to increase dashboard adoption rate by 5%, stakeholder satisfaction by 10% through predictive analytics and comprehensive data visualisation
-                    </li>
-                    
-                </ul>
-            </div>
-      
-            
-              
-            <div class="experience-list-item">
-                <h3>SWE Intern at Netwoven, Microsoft Solutions Partner</h3>
-                <ul>
-                    <li> 
-                        Accomplished the creation of RAG architecture for prompt flows to design GPT-based Q&A interface at Netwoven, facilitating employee inquiries on assigned projects, compensations and health benefits
+<br><br><br>
 
-                    </li>
-                    <li> 
-                        Demonstrated tangible results: a 20% reduction in response time to user queries and a 6% increase in user satisfaction scores, validating the effectiveness of this interface
+  
+  
+  
+<div id="Leadership in Clubs" class="section">
+    <h2>Leadership </h2>
+   
+    <li> <b> Lead Research Intern, Berkeley Haas School of Business</b>: Implemented a data processing pipeline and developed a model to fit the features used by CCAO to determine housing prices. Brainstormed ways to prevent the model from overvaluing properties.
+    </li>
+    
+    <li><b>AI Entreprenurs at Berkeley</b>: Co-founder of Build.ai, an online B2B SAAS for automating contracts and invoices. (Ideation stage)</li>
+   
 
-                    </li>
-                   
-                </ul>
-            </div>
-     
-            <div class="experience-list-item">
-                <h3>Reseach Intern at Prof. Joshua Hug's Research Group</h3>
-                <ul>
-                    <li> 
-                        Collaborated with a graduate student to transition the DataC8 NumPy module to Snap! using Java and JavaScript
-                    </li>
-                    <li> 
-                        This resulted in a 40% surge in student engagement with Snap! and a streamlined integration of data analysis functionalities
-                    </li>
-                   
-                </ul>
-            </div>
-            <!-- Question 3c. Create a div that contains/wraps around all the experience-list-item divs named "experience-wrapper"! You'll need this later. -->
-        </div>
-        </div>
-        
-
-
-        <div class="section-wrapper" id = 'projects'>
-            <h2>Projects</h2>
-            <div class="project-wrapper">
-            <!-- Question 4a. Create a few project-list-items divs. Fill these in with your favorite projects! -->
-            <div class="project-list-item">
-                <h3>Ruth and Bancroft Gardens, Codify Society </h3>
-                <p>Engineered a chatbot app for Natural Sciences Museum, Oakland, that helped in streamlining visitor interactions and enriching their museum experience with real-time assistance by providing interactive and informative tools to explore various plant species to users.</p>
-            </div>
-            <div class="project-list-item">
-                <h3>Research Intern, Data Science Discovery Project</h3>
-                <p>Designed a model based on causal modeling and probabilistic risk assessment to deliver a numerical characterization for the previously unsolved problem of formally quantifying "Keynesian uncertainty" by formulating a new theory of analytical subsumption.
-                </p>
-            </div>
-            <div class="project-list-item">
-                <h3>Founder, WalkMeCal</h3>
-                <p>Building an app that pairs users to walk back home safely at night based on their location, route, and final destination, enhancing personal safety and security during night time by utilizing real-time geo-location data to connect users with verified walking partners.</p>
-            </div>
-        </div>
-        </div>
-            <!-- Question 4b. Create a div that contains/wraps around all the projects-list-item divs named "project-wrapper". You'll need this later! -->
-        <div class="section-wrapper" id = 'a'>
-            <h2>Social Media</h2>
-            <p>You can find my <a href="https://www.linkedin.com/in/aanvi-kothari">LinkedIn</a>  here.</p>
-
-          
-        </div>
-
-        
+    <li><b>Codify</b>: Engineered an app for Natural Sciences Museum, Oakland, that helped in streamlining visitor interactions and enriching their museum experience with real-time assistance by providing interactive and informative tools to explore various plant species to users.</li></b>
+<b>Involved with </b>:
+<li>Generative AI </li>
+<li>Society of Women Engineers (SWE @Berkeley) </li>
+<li>Computer Science Undergraduate Association
+</li>
+</div>
+</div>
 </body>
 </html>
